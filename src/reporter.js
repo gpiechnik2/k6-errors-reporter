@@ -3,12 +3,14 @@ import getErrorCodeMessage from "../utils/getErrorCodeMessage"
 export function checkResponse(res, status, log = false) {
     console.log(log)
     console.log(status)
-    console.log(res)
     
     if (!status) {
+        console.log("://")
         if (log) {
+            console.log(":))")
             console.error(res)
         } else {
+            console.log("gucci")
             console.error(
                 "status.....: " + res.status +
                 "\nerror_code.: " + getErrorCodeMessage(res.error_code) +
