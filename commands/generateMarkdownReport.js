@@ -1,6 +1,6 @@
 import Showdown from 'showdown'
-import getMarkdownReport from '../utils/utils'
 import fs from 'fs'
+import getMarkdownReport from '../utils/getMarkdownReport'
 
 
 function generateMarkdownReport(outputJsonFileName, reportFileName) {

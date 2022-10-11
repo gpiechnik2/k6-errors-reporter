@@ -1,6 +1,6 @@
 import Showdown from 'showdown'
-import getHTMLReport from '../utils/utils'
 import fs from 'fs'
+import getHTMLReport from '../utils/getHTMLReport'
 
 
 export function generateHtmlReport(outputJsonFileName, reportFileName) {

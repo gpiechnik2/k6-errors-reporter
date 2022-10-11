@@ -1,4 +1,3 @@
-import getErrorCodeMessage from '../utils/utils'
 
 export function checkResponse(res, status, log = false) {
     console.log(log)
