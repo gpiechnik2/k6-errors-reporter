@@ -1,11 +1,11 @@
-import Showdown from 'showdown'
-import fs from 'fs'
-import getHTMLReport from '../utils/getHTMLReport'
+const showdown = require('showdown')
+const fs = require('fs')
+const getHTMLReport = require('../utils/getHTMLReport')
 
 
-export function generateHtmlReport(outputJsonFileName, reportFileName) {
+function generateHtmlReport(outputJsonFileName, reportFileName) {
     const htmlReport = getHTMLReport(outputJsonFileName)
-    converter = new Showdown.Converter()
+    converter = new showdown.Converter()
     converter.setOption('tables', true)
     html = converter.makeHtml(htmlReport)
 
@@ -13,4 +13,4 @@ export function generateHtmlReport(outputJsonFileName, reportFileName) {
     console.log(`[k6-errors-reporter] HTML report has been successfully generated. Name: ${reportFileName}.`)
 }
 
-export default generateHtmlReport
+module.exports = generateHtmlReport

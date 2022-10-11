@@ -1,9 +1,10 @@
-import readEachLineSync from "read-each-line-sync"
-import getErrorCodeMessage from "./getErrorCodeMessage"
+const readEachLineSync = require("read-each-line-sync")
+const getErrorCodeMessage = require("./getErrorCodeMessage")
+
 
 function getAllErrors(outputJsonFileName) {
     const errors = []
-    readEachLineSync(outputJsonFileName, function (line) {
+    readEachLineSync(outputJsonFileName, 'utf-8', '\n', function (line) {
         let errorQuantityChanged = false
         line = JSON.parse(line)
 
@@ -37,4 +38,4 @@ function getAllErrors(outputJsonFileName) {
     return errors
 }
 
-export default getAllErrors
+module.exports = getAllErrors

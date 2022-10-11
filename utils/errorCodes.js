@@ -30,4 +30,4 @@ const errorCodes = {
     1701: "Decompression error."
 }
 
-export default errorCodes
+module.exports = errorCodes

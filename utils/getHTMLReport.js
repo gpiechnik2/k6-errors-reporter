@@ -1,4 +1,5 @@
-import getMarkdownReport from "./getMarkdownReport"
+const getMarkdownReport = require('./getMarkdownReport')
+
 
 function getHTMLReport(outputJsonFileName) {
     const markdownReport = getMarkdownReport(outputJsonFileName)
@@ -90,4 +91,4 @@ ${markdownReport}
 `
 }
 
-export default getHTMLReport
+module.exports = getHTMLReport

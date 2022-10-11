@@ -1,4 +1,5 @@
-import getAllErrors from "./getAllErrors"
+const getAllErrors = require('./getAllErrors')
+
 
 function getMarkdownReport(outputJsonFileName) {
     let errors = getAllErrors(outputJsonFileName)
@@ -45,4 +46,4 @@ Congratulations, no errors detected!
     }
 }
 
-export default getMarkdownReport
+module.exports = getMarkdownReport

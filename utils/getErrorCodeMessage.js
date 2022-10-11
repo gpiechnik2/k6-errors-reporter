@@ -1,4 +1,5 @@
-import errorCodes from "./errorCodes"
+const errorCodes = require("./errorCodes")
+
 
 function getErrorCodeMessage(errorCode) {
     if (errorCode in errorCodes) {
@@ -21,4 +22,4 @@ function getErrorCodeMessage(errorCode) {
     }
 }
 
-export default getErrorCodeMessage
+module.exports = getErrorCodeMessage

@@ -1,12 +1,12 @@
-import getAllErrors from "../utils/getAllErrors"
+const getAllErrors = require("../utils/getAllErrors")
+
 
 function printErrors(outputJsonFileName) {
     console.log("[k6-errors-reporter] Displaying all errors:\n")
     const errors = getAllErrors(outputJsonFileName)
     errors.forEach(function (error, index) {
-        const number = index + 1
         console.log(
-            "[" + number + "]" +
+            "[" + index + "]" +
             "\nstatus.....: " + error.status +
             "\nerror_code.: " + error.errorCode +
             "\nerror......: " + error.error +
@@ -17,4 +17,4 @@ function printErrors(outputJsonFileName) {
     })
 }
 
-export default printErrors
+module.exports = printErrors
