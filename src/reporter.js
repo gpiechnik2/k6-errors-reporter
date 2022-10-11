@@ -5,13 +5,14 @@ function checkResponse(res, status, log = false) {
         if (log) {
             console.error(res)
         } else {
-            console.error(
-                "status.....: " + res.status +
-                "\nerror_code.: " + getErrorCodeMessage(res.error_code) +
-                "\nerror......: " + res.error +
-                "\nstatus_text: " + res.status_text +
-                "\nrequest....: " + res.request.method + " " + res.request.url + "\n"
-            )
+            console.error(res)
+            // console.error(
+            //     "status.....: " + res.status +
+            //     "\nerror_code.: " + getErrorCodeMessage(res.error_code) +
+            //     "\nerror......: " + res.error +
+            //     "\nstatus_text: " + res.status_text +
+            //     "\nrequest....: " + res.request.method + " " + res.request.url + "\n"
+            // )
         }
     }
 }
