@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/gpiechnik2/k6-errors-reporter#readme",
   "devDependencies": {
-    "fs": "^0.0.1-security",
     "node-polyfill-webpack-plugin": "^2.0.1",
     "read-each-line-sync": "^1.0.5",
     "showdown": "^2.1.0",
