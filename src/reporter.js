@@ -6,9 +6,9 @@ export function checkResponse(res, status, log = false) {
     
     if (!status) {
         if (log) {
-            console.error(JSON.stringify(res))
+            console.error(res)
         } else {
-            console.error(JSON.stringify(res))
+            console.error(res)
             // console.error(
             //     "status.....: " + res.status +
             //     "\nerror_code.: " + getErrorCodeMessage(res.error_code) +
