@@ -1,5 +1,4 @@
 const path = require('path');
-const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 
 module.exports = {
   mode: 'production',
@@ -9,8 +8,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     libraryTarget: "commonjs"
   },
-  plugins: [
-    new NodePolyfillPlugin()
-  ],
+  resolve: {
+    symlinks: false
+  },
   target: 'node'
-};
+}
