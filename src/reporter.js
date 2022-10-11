@@ -1,6 +1,6 @@
 import getErrorCodeMessage from '../utils/utils'
 
-function checkResponse(res, status, log = false) {
+export function checkResponse(res, status, log = false) {
     console.log(log)
     console.log(status)
     console.log(res)
@@ -20,5 +20,3 @@ function checkResponse(res, status, log = false) {
         }
     }
 }
-
-export default checkResponse
