@@ -1,4 +1,3 @@
-const fs = require('fs')
 const readEachLineSync = require('read-each-line-sync')
 const showdown = require('showdown')
 
@@ -186,8 +185,9 @@ export function generateMarkdownReport(outputJsonFileName, reportFileName) {
     converter = new showdown.Converter()
     converter.setOption('tables', true)
 
-    fs.writeFileSync(reportFileName, markdownReport);
+    // fs.writeFileSync(reportFileName, markdownReport);
     console.log(`[k6-errors-reporter] Markdown report has been successfully generated. Name: ${reportFileName}.`)
+    return markdownReport
 }
 
 function getHTMLReport(outputJsonFileName) {
@@ -285,7 +285,8 @@ export function generateHtmlReport(outputJsonFileName, reportFileName) {
     converter = new showdown.Converter()
     converter.setOption('tables', true)
     html = converter.makeHtml(htmlReport)
+    // fs.writeFileSync(reportFileName, html)
 
-    fs.writeFileSync(reportFileName, html)
     console.log(`[k6-errors-reporter] HTML report has been successfully generated. Name: ${reportFileName}.`)
+    return html
 }
