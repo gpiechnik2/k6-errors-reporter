@@ -1,6 +1,6 @@
 {
   "name": "k6-errors-reporterr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": " A package for generating automatic error reports from a k6 log file and displaying them in the console during performance testing.",
   "main": "index.js",
   "bin": "./index.js",
