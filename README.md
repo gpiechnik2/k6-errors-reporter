@@ -38,12 +38,12 @@ export default function() {
 Example log:
 
 ```bash
-ERRO[0003]
-  status.....: 207
+ERRO[0000]
+  status.....: 599
   error_code.: Unknown error
   error......:
-  status_text: 207 Multi-Status
-  request....: GET https://mySite.com |  source=console
+  status_text: 599 unknown
+  request....: GET http://127.0.0.1:3001 | source=console
 ```
 
 ### 2. Redirect the output to a file and generate reports based on it 
