@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Desription soon",
   "main": "index.js",
+  "bin": {
+    "k6-errors-reporter": "node index.js"
+  },
   "scripts": {
     "start": "node index.js",
     "build": "webpack",
