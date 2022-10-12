@@ -20,10 +20,4 @@ program
     .description('Generate markdown report.')
     .action(generateMarkdownReport)
 
-// TODO:
-// program
-//     .command('generate-errors-dashboard')
-//     .description('List all the TODO tasks')
-//     .action(list)
-
 program.parse()
