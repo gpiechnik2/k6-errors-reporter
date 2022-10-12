@@ -94,7 +94,7 @@ Generate markdown report based on log file `output.json`.
 k6-error-reporter generate-markdown-report output.json report.md
 ```
 
-![Console report](https://github.com/gpiechnik2/k6-errors-reporter/assets/markdownReport.jpg)
+![Console report](https://github.com/gpiechnik2/k6-errors-reporter/blob/main/assets/markdownReport.jpg)
 
 ### Console Report
 
