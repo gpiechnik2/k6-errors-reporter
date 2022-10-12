@@ -13,14 +13,19 @@ function getMarkdownReport(outputJsonFileName) {
                 errorOccurrenceData = errorOccurrenceData + `| ${request.url} | ${request.time} |
 `
             })
+            
+            let title = error.statusText
+            if (title == "") {
+                title = error.status
+            }
 
-            errorsMarkdown = errorsMarkdown + `## [${index + 1}] ${error.error}
+            errorsMarkdown = errorsMarkdown + `## [${index + 1}] ${title}
 
 Detailed information about the error:
     
-| status          | error code         | status text         | quantity                 |
-|:----------------|:-------------------|:--------------------|:-------------------------|
-| ${error.status} | ${error.errorCode} | ${error.statusText} | ${error.requests.length} |
+| status          | status text         | body          | error code         | quantity                 |
+|:----------------|:--------------------|:--------------|:-------------------|:-------------------------|
+| ${error.status} | ${error.statusText} | ${error.body} |${error.errorCode}  | ${error.requests.length} |
     
 Error occurrence data:
     

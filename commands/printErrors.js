@@ -6,11 +6,11 @@ function printErrors(outputJsonFileName) {
     const errors = getAllErrors(outputJsonFileName)
     errors.forEach(function (error, index) {
         console.log(
-            "[" + index + "]" +
+            "[" + index + "] Error found" +
             "\nstatus.....: " + error.status +
-            "\nerror_code.: " + error.errorCode +
-            "\nerror......: " + error.error +
             "\nstatus_text: " + error.statusText +
+            "\nerror_code.: " + error.errorCode +
+            "\nbody.......: " + error.body +
             "\nquantity...: " + error.requests.length +
             "\nrequests...: " + JSON.stringify(error.requests) + "\n"
         )

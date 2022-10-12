@@ -24,9 +24,9 @@ function getAllErrors(outputJsonFileName) {
             if (errorQuantityChanged == false) {
                 errors.push({
                     status: line.msg.status,
-                    errorCode: getErrorCodeMessage(line.msg.error_code),
-                    error: line.msg.error,
                     statusText: line.msg.status_text,
+                    errorCode: getErrorCodeMessage(line.msg.error_code),
+                    body: line.msg.body,
                     requests: [{
                         url: line.msg.request.method + " " + line.msg.request.url,
                         time: line.time
