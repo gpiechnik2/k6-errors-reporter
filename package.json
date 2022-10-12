@@ -1,6 +1,6 @@
 {
   "name": "k6-errors-reporter",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": " A package for generating automatic error reports from a k6 log file and displaying them in the console during performance testing.",
   "main": "index.js",
   "bin": "./index.js",
@@ -19,7 +19,7 @@
     "url": "https://github.com/gpiechnik2/k6-errors-reporter/issues"
   },
   "homepage": "https://github.com/gpiechnik2/k6-errors-reporter#readme",
-  "devDependencies": {
+  "dependencies": {
     "commander": "^9.4.1",
     "read-each-line-sync": "^1.0.5",
     "showdown": "^2.1.0",
