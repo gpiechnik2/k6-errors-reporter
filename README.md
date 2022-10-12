@@ -85,6 +85,7 @@ Generate html report based on log file `output.json`.
 ```bash
 k6-error-reporter generate-html-report output.json report.html
 ```
+![HTML report](https://github.com/gpiechnik2/k6-errors-reporter/blob/main/assets/htmlReport.jpg)
 
 ### Markdown Report
 
@@ -94,7 +95,7 @@ Generate markdown report based on log file `output.json`.
 k6-error-reporter generate-markdown-report output.json report.md
 ```
 
-![Console report](https://github.com/gpiechnik2/k6-errors-reporter/blob/main/assets/markdownReport.jpg)
+![Markdown report](https://github.com/gpiechnik2/k6-errors-reporter/blob/main/assets/markdownReport.jpg)
 
 ### Console Report
 
